@@ -367,3 +367,88 @@ header {
 }
 
 /*fotter*/
+/*media Quriers*/
+/* Medium devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .heading__title {
+    font-size: calc(28px + 5 * ((100vw - 320px) / 680));
+  }
+
+  .hero-section .title {
+    font-size: 16vw;
+  }
+
+  .container {
+    padding: 3rem;
+  }
+
+  .work-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #footer .container .flex {
+    flex-direction: column;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .heading__title {
+    font-size: calc(32px + 6 * ((100vw - 320px) / 680));
+  }
+
+  header .container {
+    width: 80%;
+    padding: 1rem;
+  }
+
+  .hero-section .title {
+    font-size: 15vw;
+  }
+
+  .work-grid {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  #footer .container .flex {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Extra large devices (1200px and up) */
+@media (min-width: 1200px) {
+  .heading__title {
+    font-size: calc(36px + 8 * ((100vw - 320px) / 680));
+  }
+
+  .hero-section .title {
+    font-size: 20vw;
+  }
+
+  .work-grid {
+    grid-template-columns: 3fr 7fr;
+  }
+
+  .container {
+    width: 60%;
+    padding: 6rem 3rem;
+  }
+}
+
+/* Specific adjustments for smaller elements */
+@media (max-width: 768px) {
+  .hangburger-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section .title {
+    font-size: 8vw;
+  }
+
+  .work-item img {
+    height: 200px;
+  }
+}
